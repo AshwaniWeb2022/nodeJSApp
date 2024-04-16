@@ -1,15 +1,14 @@
-const express = require('express');
+const express =  require('express');
 const app = express();
 const path= require('path')
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000
 
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(__dirname + '/public'));
-
-app.get('/', (req, res) => {
+// app.use(express.static(__dirname + '/public'));
+app.get('/',(req,res) =>{
     res.render('index');
-});
-
-app.listen(PORT, () => {
-    console.log(`Server is connected on port ${PORT}`);
-});
+})
+app.listen(PORT,() => {
+    console.log(`server is connect on port ${PORT}`);
+})
