@@ -9,6 +9,7 @@
   "author": "Ashwani",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "ejs": "^3.1.10",
     "env": "^0.0.2",
     "express": "^4.19.2",
